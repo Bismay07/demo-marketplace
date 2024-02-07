@@ -10,7 +10,7 @@ const Navitems = () => {
 
     useEffect(() => {
         const handler = (e: KeyboardEvent) => {
-            if(e.key === "Escape"){
+            if (e.key === "Escape") {
                 setActiveIndex(null)
             }
         }
@@ -45,6 +45,7 @@ const Navitems = () => {
                     return (
                         <>
                             <NavItem
+                                key={index}
                                 category={category}
                                 handleOpen={handleOpen}
                                 isAnyOpen={isAnyOpen}
